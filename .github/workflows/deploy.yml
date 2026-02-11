@@ -35,7 +35,7 @@ jobs:
           # O diretório 'dist' é o padrão para projetos React com Vite.
           # Caso use Create React App (CRA), altere manualmente no repo para './build/' se necessário.
           local-dir: ./dist/
-          server-dir: /www/previa/parquedospets/
+          server-dir: ./previa/parquedospets/
           state-name: .ftp-deploy-sync-state.json
           # Garante que arquivos deletados localmente também sejam removidos no servidor
           delete: true
