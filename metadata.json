@@ -1,6 +1,6 @@
 {
-  "name": "Parque dos Pets - Banho e Tosa",
-  "description": "Website comercial para o Parque dos Pets em Caucaia do Alto, oferecendo serviços de banho, tosa e pet shop com foco em carinho e qualidade.",
+  "name": "Parque dos Pets - Landing Page",
+  "description": "High-performance landing page for Parque dos Pets, focusing on conversion for pet grooming and bath services.",
   "requestFramePermissions": [
     "geolocation"
   ]
