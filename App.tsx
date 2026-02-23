@@ -21,7 +21,7 @@ import {
   Award
 } from 'lucide-react';
 
-const WHATSAPP_LINK = "https://wa.me/5511974609152?text=Olá! Vi o site e gostaria de agendar um horário para meu pet.";
+const WHATSAPP_LINK = "https://wa.me/5511974609252?text=Olá! Vi o site e gostaria de agendar um horário para meu pet.";
 const INSTAGRAM_LINK = "https://www.instagram.com/parquedospetscaucaia";
 const FACEBOOK_LINK = "https://www.facebook.com/parquedospetsbanhoetosa";
 const GOOGLE_MAPS_LINK = "https://www.google.com/maps/place/Parque+dos+Pets+%7C+Banho+e+Tosa/@-23.6578015,-47.016545,16z";
@@ -167,7 +167,12 @@ const App: React.FC = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=1920&q=80" className="w-full h-full object-cover opacity-30" alt="Banho e Tosa" />
+          <img 
+            src="https://picsum.photos/seed/pet-hero/1920/1080" 
+            className="w-full h-full object-cover opacity-30" 
+            alt="Banho e Tosa" 
+            referrerPolicy="no-referrer"
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
         </div>
 
@@ -194,7 +199,15 @@ const App: React.FC = () => {
               </a>
               <div className="flex items-center gap-4 bg-white/5 backdrop-blur-md px-7 py-5 rounded-3xl border border-white/10">
                 <div className="flex -space-x-3">
-                  {[14, 15, 16].map(i => <img key={i} className="w-12 h-12 rounded-full border-2 border-orange-500 shadow-lg" src={`https://i.pravatar.cc/100?img=${i}`} alt="Cliente" />)}
+                  {[14, 15, 16].map(i => (
+                    <img 
+                      key={i} 
+                      className="w-12 h-12 rounded-full border-2 border-orange-500 shadow-lg" 
+                      src={`https://picsum.photos/seed/avatar${i}/100/100`} 
+                      alt="Cliente" 
+                      referrerPolicy="no-referrer"
+                    />
+                  ))}
                 </div>
                 <div className="text-sm">
                   <div className="flex gap-1 text-orange-400 mb-0.5"><Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" /></div>
@@ -206,7 +219,12 @@ const App: React.FC = () => {
 
           <div className="hidden lg:block relative animate-float">
             <div className="absolute -inset-4 bg-orange-500/20 organic-blob blur-3xl"></div>
-            <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=800&q=80" className="relative z-10 rounded-[4rem] border-8 border-white/5 shadow-2xl" alt="Pet Feliz" />
+            <img 
+              src="https://picsum.photos/seed/pet-dog/800/800" 
+              className="relative z-10 rounded-[4rem] border-8 border-white/5 shadow-2xl" 
+              alt="Pet Feliz" 
+              referrerPolicy="no-referrer"
+            />
           </div>
         </div>
       </section>
@@ -291,7 +309,12 @@ const App: React.FC = () => {
         <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
           <div className="relative">
             <div className="relative z-10 rounded-[5rem] overflow-hidden shadow-2xl border-[12px] border-white">
-              <img src="https://images.unsplash.com/photo-1591769225440-811ad7d62ca2?auto=format&fit=crop&w=800&q=80" alt="Equipe Parque dos Pets" className="w-full" />
+              <img 
+                src="https://picsum.photos/seed/pet-team/800/600" 
+                alt="Equipe Parque dos Pets" 
+                className="w-full" 
+                referrerPolicy="no-referrer"
+              />
             </div>
             <div className="absolute -bottom-10 -right-10 bg-slate-900 text-white p-10 rounded-[3rem] shadow-2xl z-20 animate-bounce-slow hidden md:block">
               <span className="block text-5xl font-black text-orange-500">10+</span>
@@ -381,7 +404,7 @@ const App: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="text-xl font-black mb-1">WhatsApp</h4>
-                    <p className="text-slate-400 text-lg font-medium">(11) 97460-9152</p>
+                    <p className="text-slate-400 text-lg font-medium">(11) 97460-9252</p>
                   </div>
                 </div>
 
